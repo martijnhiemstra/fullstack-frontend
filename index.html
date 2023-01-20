@@ -11,44 +11,8 @@
   <body>
     <h1>Reserveringen</h1>
 
-    <table class="table">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Reservering nummer</th>
-        </tr>
-      </thead>
-      <tbody id="reserveringen-body"></tbody>
-    </table>
-
-    <div class="container">
-      <div class="row">
-        <div class="col">Column 1</div>
-        <div class="col">Column 2</div>
-        <div class="col">Column 3</div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-6">Column 4</div>
-        <div class="col-12 col-md-2">Column 5</div>
-        <div class="col-12 col-md-8">Column 6</div>
-      </div>
-    </div>
-
     <div class="container" id="reserveringen-body">
 
-    </div>
-
-    <div class="container">
-        <div class="row">
-          <div class="col-2">
-          </div>
-          <div class="col-8 text-center">
-            Content
-          </div>
-          <div class="col-2">
-            Rechter menu
-          </div>
-        </div>
     </div>
 
     <script>
@@ -67,7 +31,8 @@
               x += `<div class="row">
         <div class="col">${reservering.id}</div>
         <div class="col">${reservering.reservationNumber}</div>
-        <div class="col">Column 3</div>
+        <div class="col">${reservering.costs}</div>
+        <div class="col"> <button type="button" class="btn btn-danger">Verwijderen</button> </div>
       </div>`;
             });
 
